@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rogério Lobo</title>
+<title>Rogerio Lobo</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -26,9 +26,9 @@ body{background:var(--dark);color:var(--cream);font-family:'Montserrat',sans-ser
 #painel .pheader h2{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;letter-spacing:0.15em;color:var(--cream)}
 #painel .pheader .pslogan{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--gold);letter-spacing:0.1em}
 #painel .playout{display:flex;flex:1;overflow:hidden;min-height:0}
-.sidenav{width:190px;flex-shrink:0;background:#0a0a0a;border-right:1px solid rgba(201,169,110,0.1);display:flex;flex-direction:column;padding:2rem 0}
-.sidenav a{font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(201,169,110,0.35);text-decoration:none;padding:1.1rem 1.8rem;border-left:2px solid transparent;transition:all 0.25s;cursor:pointer;display:flex;flex-direction:column;gap:3px}
-.sidenav a span.num{font-family:'Cormorant Garamond',serif;font-size:0.55rem;color:rgba(201,169,110,0.2)}
+.sidenav{width:220px;flex-shrink:0;background:#0a0a0a;border-right:1px solid rgba(201,169,110,0.1);display:flex;flex-direction:column;padding:1.5rem 0;overflow-y:auto}
+.sidenav a{font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(201,169,110,0.35);text-decoration:none;padding:0.9rem 1.8rem;border-left:2px solid transparent;transition:all 0.25s;cursor:pointer;display:flex;flex-direction:column;gap:2px}
+.sidenav a span.num{font-family:'Cormorant Garamond',serif;font-size:0.5rem;color:rgba(201,169,110,0.2)}
 .sidenav a:hover,.sidenav a.active{color:var(--gold);border-left-color:var(--gold);background:rgba(201,169,110,0.04)}
 .photo-center{flex:1;display:flex;align-items:center;justify-content:center;background:#111;overflow:hidden;position:relative}
 .photo-center img{max-height:100%;max-width:100%;object-fit:cover;display:block;filter:grayscale(20%)}
@@ -36,57 +36,132 @@ body{background:var(--dark);color:var(--cream);font-family:'Montserrat',sans-ser
 .rcontent{width:300px;flex-shrink:0;border-left:1px solid rgba(201,169,110,0.1);overflow-y:auto;background:#0d0d0d}
 .rsection{display:none;padding:2.5rem 2rem}
 .rsection.active{display:block}
-.rsection .rnum{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:rgba(201,169,110,0.1);line-height:1}
-.rsection h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--cream);margin:0.3rem 0 1.5rem;line-height:1.2}
-.placeholder{background:rgba(201,169,110,0.03);border:1px dashed rgba(201,169,110,0.15);padding:2rem;text-align:center;color:rgba(201,169,110,0.2);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase}
+.rsection .rnum{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:rgba(201,169,110,0.1);line-height:1}
+.rsection h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--cream);margin:0.3rem 0 1.2rem;line-height:1.2}
+.subsections{list-style:none;margin-top:0.5rem}
+.subsections li{padding:0.5rem 0;border-bottom:1px solid rgba(201,169,110,0.07);font-size:0.65rem;letter-spacing:0.05em;color:rgba(201,169,110,0.5);line-height:1.5}
+.subsections li:last-child{border-bottom:none}
+.subsections li span{display:block;font-size:0.5rem;color:rgba(201,169,110,0.25);margin-bottom:2px;letter-spacing:0.15em}
 #lobo{scroll-snap-align:start;height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#000}
 #lobo img{width:100%;height:100%;object-fit:contain;max-width:900px}
 </style>
 </head>
 <body>
+
 <section id="home">
   <div class="bg"></div>
   <div class="vignette"></div>
   <div class="content">
     <div class="line"></div>
-    <h1>Rogério<br>Lobo</h1>
+    <h1>Rogerio<br>Lobo</h1>
     <div class="slogan">Ser como somos, cromossomos</div>
     <div class="line"></div>
     <div class="dedicatoria">
       Uma homenagem de seus filhos<br>
       <strong>Vinicius, Luana e Elisa</strong><br>
       Netos <strong>Maria Julia, Miguel, Sofia e Lina</strong><br>
-      Esposa <strong>Marisa</strong> &middot; Genros <strong>Gustavo e Max</strong>
+      Esposa <strong>Mariza</strong> &middot; Genros <strong>Gustavo e Max</strong>
     </div>
   </div>
   <div class="scroll-hint">&#x2193;&nbsp; scroll</div>
 </section>
+
 <section id="painel">
   <div class="pheader">
-    <h2>Rogério Lobo</h2>
+    <h2>Rogerio Lobo</h2>
     <div class="pslogan">Ser como somos, cromossomos</div>
   </div>
   <div class="playout">
     <nav class="sidenav">
-      <a class="active" onclick="show('vida',this)"><span class="num">01</span>Vida e Amores</a>
-      <a onclick="show('legado',this)"><span class="num">02</span>Legado Artístico</a>
-      <a onclick="show('alcateia',this)"><span class="num">03</span>A Alcateia</a>
-      <a onclick="show('profissional',this)"><span class="num">04</span>O Profissional</a>
+      <a class="active" onclick="show('trajetoria',this)"><span class="num">01</span>Uma Trajetoria em Uivos</a>
+      <a onclick="show('arvore',this)"><span class="num">02</span>Arvore Genealogica</a>
+      <a onclick="show('companheiras',this)"><span class="num">03</span>As Companheiras</a>
+      <a onclick="show('legado',this)"><span class="num">04</span>Legado Artistico</a>
+      <a onclick="show('flamengo',this)"><span class="num">05</span>Oito Letras que Arrebatam</a>
+      <a onclick="show('album',this)"><span class="num">06</span>Album de Fotos</a>
     </nav>
     <div class="photo-center">
-      <img src="familia.jpg" alt="Rogério Lobo e família">
+      <img src="familia.jpg.jpeg" alt="Rogerio Lobo e familia">
     </div>
     <div class="rcontent">
-      <div class="rsection active" id="vida"><div class="rnum">01</div><h3>Vida e Amores</h3><div class="placeholder">conteúdo a adicionar</div></div>
-      <div class="rsection" id="legado"><div class="rnum">02</div><h3>Legado Artístico</h3><div class="placeholder">conteúdo a adicionar</div></div>
-      <div class="rsection" id="alcateia"><div class="rnum">03</div><h3>A Alcateia</h3><div class="placeholder">conteúdo a adicionar</div></div>
-      <div class="rsection" id="profissional"><div class="rnum">04</div><h3>O Profissional</h3><div class="placeholder">conteúdo a adicionar</div></div>
+
+      <div class="rsection active" id="trajetoria">
+        <div class="rnum">01</div>
+        <h3>Uma Trajetoria em Uivos</h3>
+        <ul class="subsections">
+          <li><span>1</span>Alem Paraiba: o inicio de tudo</li>
+          <li><span>2</span>Coral, gremio e SENAI - nascem lider e artista</li>
+          <li><span>3</span>Engenharia e CSN: Dor e vitoria em Volta Redonda</li>
+          <li><span>4</span>Retorno e dificuldades em Alem: o Bar e o Colegio</li>
+          <li><span>5</span>Rio, Belford Roxo e a tacada certa</li>
+          <li><span>6</span>Novo retorno e consolidacao: 102 e o Homem de Midia</li>
+          <li><span>7</span>Pos-Radio: Lions Clube e projetos futuros</li>
+        </ul>
+      </div>
+
+      <div class="rsection" id="arvore">
+        <div class="rnum">02</div>
+        <h3>Arvore Genealogica</h3>
+        <ul class="subsections">
+          <li><span>1</span>Cleonice e Evaristo: a base solida</li>
+          <li><span>2</span>A Alcateia em nomes: Robson, Cledeise, Sergio, Hudson e Angelita</li>
+          <li><span>3</span>Vinicius: O Menino Aconchego (que diz nao)</li>
+          <li><span>4</span>Luana: Sobre bananas e cromossomos</li>
+          <li><span>5</span>Elisa: A Flor do Amor, Precisa</li>
+          <li><span>5.1</span>Maria Julia</li>
+          <li><span>5.2</span>Miguel</li>
+          <li><span>5.3</span>Sofia</li>
+          <li><span>5.4</span>Lina</li>
+        </ul>
+      </div>
+
+      <div class="rsection" id="companheiras">
+        <div class="rnum">03</div>
+        <h3>As Companheiras</h3>
+        <ul class="subsections">
+          <li><span>1</span>Heloisa - Prefacio</li>
+          <li><span>2</span>Belkiss - Prologo</li>
+          <li><span>3</span>Zanira - Travessia</li>
+          <li><span>4</span>Mariza - Epilogo</li>
+        </ul>
+      </div>
+
+      <div class="rsection" id="legado">
+        <div class="rnum">04</div>
+        <h3>Legado Artistico</h3>
+        <ul class="subsections">
+          <li><span>1</span>O alvorecer em prosa e poesias</li>
+          <li><span>2</span>Musicas historicas</li>
+          <li><span>3</span>Sapo Aru e o teatro</li>
+          <li><span>4</span>Um homem do Carnaval</li>
+          <li><span>5</span>Frases e bordoes: uma explosao de criatividade</li>
+        </ul>
+      </div>
+
+      <div class="rsection" id="flamengo">
+        <div class="rnum">05</div>
+        <h3>Oito Letras que Arrebatam</h3>
+        <ul class="subsections">
+          <li>O amor pelo Flamengo</li>
+        </ul>
+      </div>
+
+      <div class="rsection" id="album">
+        <div class="rnum">06</div>
+        <h3>Album de Fotos</h3>
+        <ul class="subsections">
+          <li>Em breve</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
+
 <section id="lobo">
-  <img src="lobo.png" alt="Rogério — O Lobo">
+  <img src="lobo.png" alt="Rogerio — O Lobo">
 </section>
+
 <script>
 function show(id,el){
   document.querySelectorAll('.rsection').forEach(s=>s.classList.remove('active'));
