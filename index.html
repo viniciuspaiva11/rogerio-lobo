@@ -47,7 +47,8 @@ body{background:var(--dark);color:var(--cream);font-family:'Montserrat',sans-ser
   #painel .pheader .pslogan{font-size:0.7rem}
   #painel .playout{flex-direction:column;overflow:visible;height:auto}
   .sidenav{width:100%;border-right:none;border-bottom:none;overflow:visible}
-  .photo-center{height:55vw;min-height:200px;flex-shrink:0;order:-1}
+  .photo-center{height:55vw;min-height:200px;flex-shrink:0;order:1}
+  .sidenav{order:2}
   .photo-center::after{background:linear-gradient(to bottom,#0a0a0a 0%,transparent 15%,transparent 85%,#0a0a0a 100%)}
 }
 
@@ -56,6 +57,8 @@ body{background:var(--dark);color:var(--cream);font-family:'Montserrat',sans-ser
   html{scroll-snap-type:y mandatory}
   #home,#painel,#lobo{scroll-snap-align:start;height:100vh}
   #painel{height:100vh}
+  .sidenav{order:1}
+  .photo-center{order:2}
 }
 
 /* ===== ACCORDION ===== */
@@ -126,11 +129,11 @@ body{background:var(--dark);color:var(--cream);font-family:'Montserrat',sans-ser
 
     <nav class="sidenav">
       <div class="snitem">
-        <button class="snbtn open active" onclick="toggle(this)">
+        <button class="snbtn" onclick="toggle(this)">
           <div><span class="num">01</span>Uma Trajetoria em Uivos</div>
           <span class="snarrow">&#9654;</span>
         </button>
-        <ul class="snsubs open">
+        <ul class="snsubs">
           <li><span class="sub">1</span>Alem Paraiba: o inicio de tudo</li>
           <li><span class="sub">2</span>Coral, gremio e SENAI - nascem lider e artista</li>
           <li><span class="sub">3</span>Engenharia e CSN: Dor e vitoria em Volta Redonda</li>
